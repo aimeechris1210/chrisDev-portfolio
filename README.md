@@ -21,7 +21,7 @@ This portfolio highlights my work as a **web developer**, including:
 ## 📂 Projects  
 ### 🚀 Featured Work  
 1. **HRIS System** – Attendance, payroll, leave management  
-2. **IMS** – Online online inventory management system  
+2. **IMS** – Online inventory management system  
 3. **Portfolio Website** – This website! 😎  
 
 ## 📥 Installation  
