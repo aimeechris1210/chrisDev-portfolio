@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="xdev.png">
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="#" class="logo"><img src="xdev.png" alt="Logo" class="logo-img"> chrisDev</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hi! I'm Chris</h1>
+        <p>A Web Developer</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Passionate web developer with experience in PHP, HTML, CSS, and JavaScript.</p>
+
+        <h2>Work Experience</h2>
+        <div class="work-experience">
+            <div class="job">
+                <h4>DMW - National Capital Region</h4>
+                <p>Labor and Employment Officer II (2021 - Present)</p>
+                <p>Web Developer of Human Resource Information System (HRIS)</p>
+            </div>
+            <div class="job">
+                <h4>POEA - General Services and Property Division</h4>
+                <p>Administrative Aide VI (2018 - 2021)</p>
+                <p>Assistant to Property Officer, Process Procurement</p>
+                <p>Web Developer of Inventory Management System (IMS)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="card">PHP</div>
+            <div class="card">HTML & CSS</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Bootstrap</div>
+            <div class="card">MySQL</div>
+            <div class="card">Web Design</div>
+            <div class="card">Problem Solving</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2><br>
+        <div class="projects">
+            <div class="card">
+                <img src="project1.png" alt="Project 1 Preview">
+                <h3>IMS</h3>
+                <p>Inventory Management System - a system for managing office's properties/assets.</p>
+            </div>
+            <div class="card">
+                <img src="project2.png" alt="Project 2 Preview">
+                <h3>HRIS</h3>
+                <p>Human Resource Information System - centralized hub for employee management and resources..</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: aimeechris1210@gmail.com</p>
+        <p>Mobile: +639263962610</p>
+    </section>
+
+    <button id="goTopBtn" onclick="scrollToTop()">⬆ Top</button>
+
+    <script>
+        // Show the button when scrolling down
+        window.onscroll = function () {
+            let goTopBtn = document.getElementById("goTopBtn");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                goTopBtn.style.display = "block";
+            } else {
+                goTopBtn.style.display = "none";
+            }
+        };
+
+        // Smooth scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Chris. All rights reserved.</p>
+    </footer>
+</body>
+</html>
